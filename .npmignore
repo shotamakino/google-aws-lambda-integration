@@ -1,0 +1,10 @@
+.DS_STORE
+.env
+.idea
+npm-debug.log
+dist
+build
+aws
+.npmignore
+buildspec.yml
+README.md
