@@ -2,7 +2,7 @@ const { conversation } = require('@assistant/conversation');
 const dashbot = require('dashbot');
 
 const app = conversation();
-const googleDashbot = dashbot('EEhwP2NkrTda9RJeIEEEdCFrS6YbnWJM7bv88DHp', {debug: true}).google;
+const googleDashbot = dashbot(process.env.DASHBOT_API_KEY, {debug: true}).google;
 
 app.handle('greeting', conv => {
   googleDashbot.setOutgoingIntent({
